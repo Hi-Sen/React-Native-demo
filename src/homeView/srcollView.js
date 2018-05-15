@@ -96,6 +96,7 @@ export default class srcollView extends Component {
             </View>
         );
     }
+    
     // icon点击事件
     _onPressGo (name) {
         this.props.navigate ('Page4',{name});
