@@ -59,7 +59,7 @@ export default class srcollView extends Component {
                     style={styles.swiper}            //样式
         　　　　　　  height={150}                    //组件高度
         　　　　　　  loop={true}                     //如果设置为false，那么滑动到最后一张时，再次滑动将不会滑到第一张图片。
-        　　　　　　  autoplay={true}                //自动轮播autoplayTimeout={4}                //每隔4秒切换
+        　　　　　　  autoplay={false}                //自动轮播autoplayTimeout={4}                //每隔4秒切换
         　　　　　　  horizontal={true}               //水平方向，为false可设置为竖直方向
         　　　　　　  paginationStyle={{bottom: 0}}   //小圆点的位置：距离底部10px
         　　　　　　  showsButtons={false}            //为false时不显示控制按钮
@@ -92,8 +92,6 @@ export default class srcollView extends Component {
                             })
                         }
                     </View>
-
-
                  </View>
             </View>
         );

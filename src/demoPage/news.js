@@ -12,7 +12,7 @@ var {height, width} = Dimensions.get('window');
 export default class page extends Component {
     // 配置页面导航header选项
     static navigationOptions = ({navigation}) => ({
-        headerTitle: '新闻消息',
+        headerTitle: '新闻消息'
     });
     constructor (props) {
         super(props)

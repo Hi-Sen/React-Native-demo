@@ -3,4 +3,4 @@
 
 // AppRegistry.registerComponent('reactNative', () => App );
 
-import './router'
+import './src/router'

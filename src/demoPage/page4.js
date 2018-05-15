@@ -29,10 +29,20 @@ export default class page4 extends Component {
     render () {
         return (
             <View>
-                <Text style={{marginTop:50,textAlign:'center'}}> 我是 {this.state.name}</Text>
+
+                <Text onPress={()=>{this._goDetail()}} style={{marginTop:50,textAlign:'center'}}> 我是 {this.state.name}</Text>
+                
                 <Text style={{marginTop:50,textAlign:'center'}}> {this.state.doThing}</Text>
             </View>
         ) 
+    }
+    // 去详情
+    _goDetail () {
+        let params = {
+            ID: '129',
+            Name: this.state.name
+        }
+        this.props.navigation.navigate('ShopDetail',params);
     }
     
 }
