@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { 
-    StyleSheet,Text,View,Image,FlatList,Dimensions,ScrollView,PixelRatio  
+    StyleSheet,Text,View,Image,FlatList,Dimensions,ScrollView,PixelRatio 
 } from 'react-native';
 
 // 引入axios
@@ -74,7 +74,7 @@ export default class shopDetail extends Component {
                         <Text style={styles.prc}>￥： {this.state.price}</Text>
                         <Text>规格：{this.state.size}</Text>
                         <Text>适用人群：{this.state.shortDescription}</Text>
-                        <Text onPress={()=>{this._goIndex()}}>测试跳转首页</Text> 
+                        <Text onPress={()=> {this._goIndex()}}>测试跳转首页</Text> 
                     </View>
 
                     <Text style={styles.shopD}>商品详情</Text>
@@ -92,7 +92,8 @@ export default class shopDetail extends Component {
     }
     // 品名回首页
     _goIndex () {
-        this.props.navigation.goBack ()
+        debugger
+        this.props.navigation.goBack ('News')
     }
 }
 
