@@ -45,7 +45,7 @@ export default class srcollView extends Component {
            .then(res => {
                console.log(res);
                this.setState({
-                //    bannerList: res.data.Data
+                //bannerList: res.data.Data
                 })
            }), err => {
                console.log(`${err}`)
@@ -55,6 +55,7 @@ export default class srcollView extends Component {
     render(){
         return (
             <View>
+                {/* banner */}
                 <Swiper 
                     style={styles.swiper}            //样式
         　　　　　　  height={150}                    //组件高度
@@ -74,9 +75,9 @@ export default class srcollView extends Component {
                     }) 
                 }
                 </Swiper>
+
                  {/* 8 个 图标  两行*/}
                  <View style={styles.borderSty}>
-                    
                     <View style={styles.fourImg}>
                         {
                             this.state.iconImg.map( (item,n)=> {

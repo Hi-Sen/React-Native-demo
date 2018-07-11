@@ -28,6 +28,7 @@ export default class page extends Component {
                         backgroundColor="#8DD1F9"
                         barStyle="light-content"
                     />
+                    
                     {/* 商品列表 */}
                     <View style={{flex:1}}>
                         <ShopList navigate={this.props.navigation.navigate}/>

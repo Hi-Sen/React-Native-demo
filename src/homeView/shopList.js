@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,Text,View,Image,FlatList,TouchableOpacity
 } from 'react-native';
+
 // 引入axios
 import axios from '../http'
 import ScrollViewContent from '../homeView/srcollView'
@@ -23,6 +24,7 @@ export default class shopList extends Component {
         return (
             <View style={{flex:1}}>
                 <FlatList
+                    //引入头部组件，包含banner  和  八个图标 
                     ListHeaderComponent={<ScrollViewContent navigate={this.props.navigate}/>}
                     onRefresh={this._onRefresh}
                     onEndReached={this._onLoadMore}
