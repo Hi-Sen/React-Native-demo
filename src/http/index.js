@@ -4,7 +4,7 @@ import axios from 'axios'
 let token = '';
 
 var instance = axios.create({
-    baseURL: 'https://ws.mammasay.com',
+    baseURL: '请联系作者',
     timeout: 5000,
     headers: {
         'X-Custom-Header': 'foobar',
